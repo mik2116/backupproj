@@ -1,9 +1,11 @@
-  
-<h1>Add New Sighting!</h1>
-<form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <input type="submit" value="Submit">
-</form>
-<a href="/sightings/">BACK</a>
+<!doctype html>
+<html>  
+	<h1>Add New Sighting!</h1>
+	<form method="post">
+	    {% csrf_token %}
+	    {{ form.as_p }}
+	    <input type="submit" value="Submit">
+	</form>
+	<a href="/sightings/">BACK</a>
+</html>
 
