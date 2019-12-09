@@ -1,7 +1,7 @@
 
 # TOOLS PROJECT (SECTION 001)
 
-##Squirrel Tracker
+## Squirrel Tracker
 
 The purpose of this project is to pull a database of squirrel sightings from the Central
  Park Data Census and upload sightings onto a website, including an interactive map. The
