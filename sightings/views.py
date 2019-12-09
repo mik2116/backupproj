@@ -3,6 +3,12 @@ from .models import Tracker
 import random
 from .forms import Form
 
+def all_squirrels(request):
+    squirrels = Tracker.objects.all()
+    context = {
+            'squirrels':squirrels
+            }
+    return render(request,'sightings/all.html',context)
 
 def showmap(request):
     sightings = list(Tracker.objects.all())
