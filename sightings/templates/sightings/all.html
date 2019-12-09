@@ -6,9 +6,9 @@
     <body>
 	<div>
 	    <ul>
-	    {% for squirrel in squirrels %}
+	    {% for squirrel in sightings %}
 	    <li>
-		 <a href='{{ squirrel.unique_squirrel_id}}'>{{ squirrel.unique_squirrel_id }}</a>
+		 <a href='{{ squirrel.unique_squirrel_id }}'>{{ squirrel.unique_squirrel_id }}</a>
 	    </li>
 	    {% endfor %}
             </ul>
@@ -16,14 +16,10 @@
 
 	<div>
 	<a href='/sightings/add/' class=''>
-        <center>
         <button type="button" class='button'>Add new sighting</button>
-        </center>
         </a>
 	<a href='/map/' class=''>
-        <center>
         <button type="button" class='button'>Go to Map</button>
-        </center>
         </a>
 
 	</div>

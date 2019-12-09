@@ -54,9 +54,9 @@ def add(request):
         if form.is_valid():
             form.save()
             return redirect('/sightings/')
-        else:
-            form = Form()
-            context = {'form':form}
-            return render(request,'sightings/add.html',context)
+    else:
+        form = Form()
+        context = {'form':form}
+        return render(request,'sightings/add.html',context)
 
 

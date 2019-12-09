@@ -4,14 +4,14 @@
 	    <h1>Squirrel Sightings</h1>
 	    <ul>
 	    {% for squirrel in sightings %}
-	    	<li><a href="/sightings/sightings/{{ squirrel_id.unique_squirrel_id }}">{{ squirrel_id.unique_squirrel_id }}</a></li>
+	    	<li><a href="/sightings/sightings/{{ squirrel.unique_squirrel_id }}">{{ squirrel.unique_squirrel_id }}</a></li>
 	    {% endfor %}
 	    </ul>
 	{% else %}
 	    <p>No data available.</p>
 	{% endif %}
 	<a href='/tracker/sightings/add'>Add Sighting</a><br>
-	<a href='/tracker/map'>See Interactive Sightings Map</a><br>
-	<a href='/tracker/sightings/stats'>See Some Stats</a>
+	<a href='/tracker/map'>See Interactive Map</a><br>
+	<a href='/tracker/sightings/stats'>See Stats</a>
 </html>
 
