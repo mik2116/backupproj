@@ -1,6 +1,9 @@
 
 from django.db import models
 from django.utils.translation import gettext as _
+from django.urls import reverse
+from django.forms import ModelForm
+
 
 class Tracker(models.Model):
  # x and y used to simplify coordinates referencing
@@ -154,5 +157,6 @@ class Tracker(models.Model):
             max_length = 50,)
     
     def __str__(self):
-        return self.ID
+        return self.unique_squirrel_id
+
 
