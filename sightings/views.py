@@ -3,13 +3,6 @@ from .models import Tracker
 import random
 from .forms import Form
 
-def all_squirrels(request):
-    squirrels = Tracker.objects.all()
-    context = {
-            'squirrels':squirrels
-            }
-    return render(request,'sightings/all.html',context)
-
 def showmap(request):
     sightings = list(Tracker.objects.all())
     if len(sightings) > 100:
@@ -42,8 +35,8 @@ def update(request,unique_squirrel_id):
     form = Form(request.POST or None, instance=squirrel_id)
     context = {'form':form}
     if form.is_valid():
-        Squirrel = form.save(commit=False)
-        Squirrel.save()
+        squirrel_id = form.save(commit=False)
+        squirrel_id.save()
         return redirect('/sightings/')
     else:
         context={'form':form}

@@ -1,7 +1,12 @@
 <!doctype html>
 <html>
+
+	<a href='/tracker/sightings/add'>Add New Sighting</a><br>
+	<a href='/tracker/map'>See Interactive Map</a><br>
+	<a href='/tracker/sightings/stats'>See Stats</a>
+
 	{% if sightings %}
-	    <h1>Squirrel Sightings</h1>
+	    <h1>HomePage: All Squirrel Sightings!</h1>
 	    <ul>
 	    {% for squirrel in sightings %}
 	    	<li><a href="/sightings/sightings/{{ squirrel.unique_squirrel_id }}">{{ squirrel.unique_squirrel_id }}</a></li>
@@ -10,6 +15,7 @@
 	{% else %}
 	    <p>No data available.</p>
 	{% endif %}
+
 	<a href='/tracker/sightings/add'>Add Sighting</a><br>
 	<a href='/tracker/map'>See Interactive Map</a><br>
 	<a href='/tracker/sightings/stats'>See Stats</a>
