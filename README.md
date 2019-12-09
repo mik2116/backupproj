@@ -8,8 +8,8 @@ The purpose of this project is to pull a database of squirrel sightings from the
 The website can be reached [here](http://35.188.229.62/sightings/sightings/) which displays all the sightings, and can redirect you to the [map](http://35.188.229.62/sightings/map/) as well. You can edit past sightings by clicking on their ID on the page, and you 
 can add new sightings by using the link on the page which redirects you [here](http://35.188.229.62/sightings/sightings/add).
 
-The deployed url can be found at: https://tools-project-31.appspot.com/
-
+The deployed url can be found at: https://tools-project-31.appspot.com/sightings/sightings
+*please pay attention to the extra /sightings url path 
 
 ## Project Group 31, Section 1
 
