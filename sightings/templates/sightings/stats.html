@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+	<h1><center>Squirrel Sighting Stats</center></h1>
+{% block content %}
+<form  method='GET'>
+
+<style>
+table,table tr th, table tr td { border:2px solid grey; }
+table { width: 1000px; min-height: 40px; line-height: 40px; text-align: center; border-collapse: collapse;}
+table th {
+	background-color: #FF5733;
+	}
+table td {
+	background-color:#FFAC33;
+	}
+</style>
+
+<table align='center' style='width:80%'>
+	<tr>
+		<th>No. of Squirrels</th>
+		<th>No. of Adult Squirrels</th>
+		<th>No. of Cinnamon Squirrels</th>
+		<th>No. of Squirrels on the Ground</th>
+		<th>No. of Running Squirrels</th>
+	</tr>
+	<tr>
+	<td>{{ count_sightings }}</td>
+	<td>{{ adults }}</td>
+	<td>{{ cinnamons }}</td>
+	<td>{{ plane_location }}</td>
+	<td>{{ running_mode }}</td>
+	</tr>
+	</center></table>
+</form>
+<a href='/sightings/' class=''><center><button type='button' class='button'>BACK</button></center></a>
+{% endblock %}
+</html>
+
