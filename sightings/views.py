@@ -32,7 +32,7 @@ def stats(request):
     return render(request, 'sightings/stats.html',context)
 
 def update(request,unique_squirrel_id):
-    squirrel_id = get_object_or_404(Tracker, pk = unique_squirrell_id)
+    squirrel_id = get_object_or_404(Tracker, pk = unique_squirrel_id)
     form = Form(request.POST or None, instance=squirrel_id)
     context = {'form':form}
     if form.is_valid():
